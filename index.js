@@ -116,11 +116,26 @@ exports.plugin = function (schema, options) {
   schema.method('resetCount', resetCount);
   schema.static('resetCount', resetCount);
 
+  // Declare a function to set counter value
+  var setCounter = function (value, callback) {
+    IdentityCounter.findOneAndUpdate(
+      { model: settings.model, field: settings.field },
+      { count: value },
+      { new: true }, // new: true specifies that the callback should get the updated counter.
+      function (err) {
+        if (err) return callback(err);
+        callback(null, value);
+      }
+    );
+  };
+  // Add setCount as both a method on documents and a static on the schema for convenience.
+  schema.method('setCounter', setCounter);
+  schema.static('setCounter', setCounter);
+
   // Every time documents in this schema are saved, run this logic.
   schema.pre('save', function (next) {
     // Get reference to the document being saved.
     var doc = this;
-
     // Only do this if it is a new document (see http://mongoosejs.com/docs/api.html#document_Document-isNew)
     if (doc.isNew) {
       // Declare self-invoking save function.
