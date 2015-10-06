@@ -1,6 +1,6 @@
 {
   "name": "mongoose-auto-increment",
-  "version": "4.0.0",
+  "version": "3.2.4",
   "description": "This plugin allows you to auto-increment any field on any mongoose schema that you wish.",
   "repository": {
     "type": "git",
@@ -10,13 +10,13 @@
     "extend": "^2.0.0"
   },
   "peerDependencies": {
-    "mongoose": "~4.0.0"
+    "mongoose": "^3.8.12"
   },
   "devDependencies": {
     "async": "*",
     "chai": "*",
     "mocha": "*",
-    "mongoose": "~4.0.0"
+    "mongoose": "~3.8.18"
   },
   "keywords": [
     "mongoose",
@@ -34,23 +34,24 @@
     "mongoose-pureautoinc"
   ],
   "author": {
-    "name": "Alex Ford (Chevex)",
+    "name": "Alex Ford",
     "email": "alex.ford@codetunnel.com",
-    "url": "http://CodeTunnel.com"
+    "url": "Chevex"
   },
   "contributors": [
     {
-      "name": "Nassor Paulino da Silva (rossan)",
-      "email": "nassor@gmail.com"
+      "name": "Nassor Paulino da Silva",
+      "email": "nassor@gmail.com",
+      "url": "rossan"
     },
     {
-      "name": "Misha Koryak (mkoryak)",
+      "name": "Misha Koryak",
       "email": "mkoryak@gmail.com",
-      "url": "http://ExhibitionNest.com"
+      "url": "mkoryak"
     },
     {
-      "name": "Christopher Hiller (boneskull)",
-      "url": "http://boneskull.github.io/"
+      "name": "Christopher Hiller",
+      "url": "boneskull"
     },
     {
       "name": "tomaskavka",
@@ -62,5 +63,29 @@
   },
   "bugs": {
     "url": "https://github.com/codetunnel/mongoose-auto-increment/issues"
-  }
+  },
+  "gitHead": "89a6db614fd30ac392a9f0301850935bc221eeef",
+  "homepage": "https://github.com/codetunnel/mongoose-auto-increment",
+  "_id": "mongoose-auto-increment@3.2.4",
+  "_shasum": "d7533fe1234adcbecda88c6d574bef955b77883a",
+  "_from": "mongoose-auto-increment@3.2.4",
+  "_npmVersion": "2.6.1",
+  "_nodeVersion": "0.12.0",
+  "_npmUser": {
+    "name": "chevex",
+    "email": "alex.ford@codetunnel.com"
+  },
+  "maintainers": [
+    {
+      "name": "chevex",
+      "email": "Alex.Ford@CodeTunnel.com"
+    }
+  ],
+  "dist": {
+    "shasum": "d7533fe1234adcbecda88c6d574bef955b77883a",
+    "tarball": "http://registry.npmjs.org/mongoose-auto-increment/-/mongoose-auto-increment-3.2.4.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/mongoose-auto-increment/-/mongoose-auto-increment-3.2.4.tgz",
+  "readme": "ERROR: No README data found!"
 }

@@ -139,6 +139,7 @@ exports.plugin = function (schema, options) {
     // Only do this if it is a new document (see http://mongoosejs.com/docs/api.html#document_Document-isNew)
     if (doc.isNew) {
       // Declare self-invoking save function.
+
       (function save() {
         // If ready, run increment logic.
         // Note: ready is true when an existing counter collection is found or after it is created for the
